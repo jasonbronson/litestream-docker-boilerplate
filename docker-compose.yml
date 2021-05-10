@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  litestream:
+    image: litestream/litestream
+    volumes:
+      - ./data:/data
+      - ./litestream:/etc
+    env_file:
+      - ./.env
+    command: replicate
+
+volumes:
+  litestream:

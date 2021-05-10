@@ -1,0 +1,3 @@
+data/*
+litestream/litestream.yml
+.env

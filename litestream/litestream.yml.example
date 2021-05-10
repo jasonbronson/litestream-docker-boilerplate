@@ -1,0 +1,10 @@
+access-key-id: 78035d9f
+secret-access-key: 83c954fa
+
+dbs:
+  - path: /data/seocontentcrawler_crawlerdb.sqlite
+    replicas:
+      - type: s3
+        bucket: litestream
+        path: db
+        endpoint: http://192.168.1.99:9001
